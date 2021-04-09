@@ -1,15 +1,19 @@
-import './NavLink.css';
-import React from "react";
+import './NavLink.scss';
 import { NavLink as Link } from 'react-router-dom';
 
 type NavLinkProps = {
-    label: string
+    altLabel: string
     url: string
+    icon: any
 }
 const NavLink = (props: NavLinkProps) => {
 
-    return <Link exact className={`nav-link`} to={props.url}>{props.label}</Link>
-        
+    return <Link 
+        exact 
+        activeClassName="text-purple bg-purple-light rounded"
+        className="text-purple-light p-3" 
+        aria-label={props.altLabel} 
+        to={props.url}>{props.icon}</Link>
 }
 
 export default NavLink;

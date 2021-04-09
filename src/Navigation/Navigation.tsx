@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Navigation.css';
+import './Navigation.scss';
 import NavLink from './NavLink/NavLink';
 
 type NavigationProps = {
@@ -13,12 +13,14 @@ const Navigation = (props: NavigationProps) => {
     const items = [];
 
     for (const [index, item] of props.links.entries()) {
-        items.push(<li key={index}><NavLink url={item.url} label={item.label}/></li>);
+        items.push(<li key={index}><NavLink url={item.url} icon={item.icon} altLabel={item.altLabel}/></li>);
     }
 
-    return <ul>
-        {items}
-    </ul>
+    return <nav className="max-h-screen bg-purple-dark justify-center flex rounded-3xl p-20">
+        <ul className="space-y-10">
+            {items}
+        </ul>
+    </nav>
 
 }
 

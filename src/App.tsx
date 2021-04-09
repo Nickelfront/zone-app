@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import React, { Component } from 'react';
 import Navigation from './Navigation/Navigation';
 import Dashboard from './components/Dashboard/Dashboard';
@@ -8,14 +8,18 @@ import Settings from './components/Settings/Settings';
 import { Route, Switch } from 'react-router';
 import { WebRoute } from './utils/types'
 import Error from './components/Error/Error';
+import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
+import KitchenIcon from '@material-ui/icons/Kitchen';
+import HistoryIcon from '@material-ui/icons/History';
+import SettingsIcon from '@material-ui/icons/Settings';
 
 class App extends Component {
   render() {
     const links: WebRoute[] = [
-      { url: "/", label: "Home", component: Dashboard }, 
-      { url: "/meals", label: "Meals", component: Meals },
-      { url: "/history", label: "History", component: History }, 
-      { url: "/settings", label: "Settings", component: Settings }, 
+      { url: "/", altLabel: "Home", component: Dashboard, icon: <HomeOutlinedIcon/> }, 
+      { url: "/meals", altLabel: "Meals", component: Meals, icon: <KitchenIcon/>},
+      { url: "/history", altLabel: "History", component: History, icon: <HistoryIcon/>}, 
+      { url: "/settings", altLabel: "Settings", component: Settings, icon: <SettingsIcon/> }, 
     ];
 
     const routes = [];
@@ -24,12 +28,14 @@ class App extends Component {
       routes.push(<Route key={index} exact path={item.url} component={item.component} />);
     }
 
-    return <main>
-      <Switch>
-        <Navigation links={links} />
-        {routes}
-        <Route component={Error} />
-      </Switch>
+    return <main className="mx-10 my-10 flex">
+      <Navigation links={links} />     
+      <section className="hide-scrollbar overflow-auto max-h-screen">
+        <Switch>
+          {routes}
+          <Route component={Error} />
+        </Switch>
+      </section>               
     </main>
   }
 }
