@@ -1,0 +1,12 @@
+.nav-link {
+    border: none;
+    color: #15361D;
+    text-decoration: none;
+}
+
+.active {
+    background-color: #AAF7B8;
+    border-radius: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
