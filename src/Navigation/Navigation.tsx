@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './Navigation.scss';
 import NavLink from './NavLink/NavLink';
+import NatureIcon from '@material-ui/icons/Nature';
 
 type NavigationProps = {
     links: any[]
@@ -16,10 +17,11 @@ const Navigation = (props: NavigationProps) => {
         items.push(<li key={index}><NavLink url={item.url} icon={item.icon} altLabel={item.altLabel}/></li>);
     }
 
-    return <nav className="max-h-screen min-h-screen bg-purple-dark justify-center flex rounded-3xl p-20">
+    return <nav className="max-h-screen min-h-screen bg-purple-dark justify-center flex rounded-3xl p-10">
         <ul className="space-y-10">
             {items}
         </ul>
+
     </nav>
 
 }

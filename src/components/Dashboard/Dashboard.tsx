@@ -18,7 +18,7 @@ class Dashboard extends Component {
             {name: 'Avocado', type: MealType.FAT, img: img, rating: 5, prepTime: 40},
         ];
         return <section className="px-10 space-y-5">
-            <div className="grid grid-cols-2">
+            <div className="flex justify-between">
                 <Search className="max-w-lg"/>
                 <DateDisplay/>
             </div>

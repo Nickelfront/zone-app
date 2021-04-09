@@ -11,8 +11,8 @@ const DateDisplay = (props: any) => {
 
     const [date, setDate] = useState(today);
 
-    return <div>
-        <h5 className="float-right">{date}</h5>
+    return <div className="flex items-stretch">
+        <h5 className="self-center">{date}</h5>
     </div>
 
 }
