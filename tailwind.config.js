@@ -12,7 +12,8 @@ module.exports = {
         DEFAULT: '#8B5CF6', 
         dark: '#261D56'
       },
-      red: colors.red
+      red: colors.red,
+      yellow: colors.yellow
     },
     container: {
       center: true,

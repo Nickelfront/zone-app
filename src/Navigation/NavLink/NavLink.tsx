@@ -9,11 +9,11 @@ type NavLinkProps = {
 const NavLink = (props: NavLinkProps) => {
 
     return <Link 
-        exact 
-        activeClassName="text-purple bg-purple-light rounded"
-        className="text-purple-light p-3" 
-        aria-label={props.altLabel} 
-        to={props.url}>{props.icon}</Link>
+            exact 
+            activeClassName="text-purple bg-purple-light rounded-2xl"
+            className="text-purple-light p-3" 
+            aria-label={props.altLabel} 
+            to={props.url}>{props.icon}</Link>
 }
 
 export default NavLink;

@@ -6,6 +6,7 @@ import DateDisplay from "../../DateDisplay/DateDisplay";
 import Suggestions from "../../Suggestions/Suggestions";
 import { Recipe, MealType } from "../../utils/types";
 import dish from '../../img/dish.png';
+import Favorites from "../../Favorites/Favorites";
 
 class Dashboard extends Component {
 
@@ -24,6 +25,7 @@ class Dashboard extends Component {
             </div>
             <Banner text="Good news, you've stayed in the zone for 2 months!" imgSrc={bannerImg}/>
             <Suggestions meals={meals}/>
+            <Favorites/>
         </section>
     }
 }
