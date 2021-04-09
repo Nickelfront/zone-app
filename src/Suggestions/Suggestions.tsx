@@ -1,9 +1,9 @@
 import { Component } from "react";
-import MealItem from "../MealItem/MealItem";
-import { Meal } from "../utils/types";
+import SuggestedRecipe from "../SuggestedRecipe/SuggestedRecipe";
+import { Recipe } from "../utils/types";
 
 type SuggestionsProps = {
-    meals: Meal[]
+    meals: Recipe[]
 }
 class Suggestions extends Component<SuggestionsProps> {
     
@@ -12,16 +12,15 @@ class Suggestions extends Component<SuggestionsProps> {
     }
     
     render() {
-        let mealItems : any[] = [];
+        let recipeItems : any[] = [];
         for (const [index, item] of this.props.meals.entries()) {
-            mealItems.push(<li key={index}><MealItem rating={item.rating} name={item.name} type={item.type} img={item.img} isEven={index % 2 == 0}/></li>);
+            recipeItems.push(<li key={index}><SuggestedRecipe prepTime={item.prepTime} rating={item.rating} name={item.name} type={item.type} img={item.img} isEven={index % 2 == 0}/></li>);
         }
-
         return <section className="">
             <h2 className="text-purple-dark"><strong>Suggested</strong> for you</h2>
             <div>
-                <ul>
-                    {mealItems}
+                <ul className="flex flex-row space-x-10">
+                    {recipeItems}
                 </ul>
             </div>
         </section>

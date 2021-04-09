@@ -1,4 +1,3 @@
-import { Component } from "react";
 
 export type WebRoute = {
     url: string
@@ -7,11 +6,12 @@ export type WebRoute = {
     component: any
 }
 
-export type Meal = {
+export type Recipe = {
     name: string
     type: MealType
     img: any
     rating: number
+    prepTime: number //minutes
 }
 
 export enum MealType {

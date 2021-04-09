@@ -9838,6 +9838,11 @@ react-dom@^17.0.2:
     object-assign "^4.1.1"
     scheduler "^0.20.2"
 
+react-draggable-slider@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/react-draggable-slider/-/react-draggable-slider-0.1.6.tgz#a52730b2aebd74377f66ef635e3eb34c197f5684"
+  integrity sha512-yRZ/CosKhbEIbOP4Zx36JoWuXu7RRyRy9asADkFzMfY8n+hI4D9+RhPV+Q093s8I4DgpWOEZ3Ulzk/x+mVzdxQ==
+
 react-error-overlay@^6.0.9:
   version "6.0.9"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.9.tgz#3c743010c9359608c375ecd6bc76f35d93995b0a"
@@ -9952,11 +9957,6 @@ react-scripts@4.0.3:
     workbox-webpack-plugin "5.1.4"
   optionalDependencies:
     fsevents "^2.1.3"
-
-react-swipeable@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/react-swipeable/-/react-swipeable-6.1.0.tgz#558b08a797a749a33e98492af84f2ca84a23d146"
-  integrity sha512-vB6+bv1I5L9nfuM7quu41o/kK1f3a7cTQ3NHNWkOltg5uhBpnH6xvkQJeoPfKQ6K4pnifELXY65wzWwWBa+zGg==
 
 react-transition-group@^4.4.0:
   version "4.4.1"
