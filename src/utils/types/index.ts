@@ -15,7 +15,7 @@ export type Recipe = {
 }
 
 export enum MealType {
-    CARB,
-    PROTEIN,
-    FAT
+    CARB = "Carb",
+    PROTEIN = "Protein",
+    FAT = "Fat"
 }

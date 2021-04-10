@@ -18,12 +18,14 @@ class Dashboard extends Component {
             {name: 'Eggs', type: MealType.PROTEIN, img: img, rating: 4.9, prepTime: 30},
             {name: 'Avocado', type: MealType.FAT, img: img, rating: 5, prepTime: 40},
         ];
-        return <section className="px-10 space-y-5">
+        let favorites = [];
+
+        return <section className="space-y-5">
             <div className="flex justify-between">
                 <Search className="max-w-lg"/>
                 <DateDisplay/>
             </div>
-            <Banner text="Good news, you've stayed in the zone for 2 months!" imgSrc={bannerImg}/>
+            <Banner text="Good news, you've stayed in the zone for 2 months! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus, nulla vitae lacinia suscipit, ante neque sollicitudin erat." imgSrc={bannerImg}/>
             <Suggestions meals={meals}/>
             <Favorites/>
         </section>

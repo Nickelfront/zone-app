@@ -28,7 +28,7 @@ class App extends Component {
       routes.push(<Route key={index} exact path={item.url} component={item.component} />);
     }
 
-    return <main className="m-10 flex">
+    return <main className="m-10 flex space-x-10">
       <Navigation links={links} />     
       <section className="hide-scrollbar overflow-auto max-h-screen">
         <Switch>
