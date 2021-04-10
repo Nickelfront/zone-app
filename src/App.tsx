@@ -33,7 +33,7 @@ class App extends Component {
       <Navigation links={links} />     
       <section className="hide-scrollbar overflow-auto max-h-screen">
         <Switch>
-          <BrowserRouter basename="/calendar">
+          <BrowserRouter basename="/zone-app">
           {routes}
           <Route component={Error} />
           </BrowserRouter>
