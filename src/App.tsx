@@ -12,6 +12,7 @@ import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 import KitchenIcon from '@material-ui/icons/Kitchen';
 import HistoryIcon from '@material-ui/icons/History';
 import SettingsIcon from '@material-ui/icons/Settings';
+import { BrowserRouter, Router } from 'react-router-dom';
 
 class App extends Component {
   render() {
@@ -32,8 +33,10 @@ class App extends Component {
       <Navigation links={links} />     
       <section className="hide-scrollbar overflow-auto max-h-screen">
         <Switch>
+          <BrowserRouter basename="/calendar">
           {routes}
           <Route component={Error} />
+          </BrowserRouter>
         </Switch>
       </section>               
     </main>
