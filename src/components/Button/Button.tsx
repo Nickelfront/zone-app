@@ -1,7 +1,7 @@
 import { Component } from "react";
 
 type ButtonProps = {
-    classes: string
+    classStyles: string
     label: string
 }
 class Button extends Component<ButtonProps> {
@@ -10,7 +10,7 @@ class Button extends Component<ButtonProps> {
     }
 
     render() {
-        return <button className={this.props.classes}>
+        return <button className={this.props.classStyles}>
             {this.props.label}
         </button>
     }
