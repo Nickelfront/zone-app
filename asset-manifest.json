@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/zone-app/static/css/main.b5678107.chunk.css",
-    "main.js": "/zone-app/static/js/main.66c73a34.chunk.js",
-    "main.js.map": "/zone-app/static/js/main.66c73a34.chunk.js.map",
+    "main.js": "/zone-app/static/js/main.200691e8.chunk.js",
+    "main.js.map": "/zone-app/static/js/main.200691e8.chunk.js.map",
     "runtime-main.js": "/zone-app/static/js/runtime-main.062c4a29.js",
     "runtime-main.js.map": "/zone-app/static/js/runtime-main.062c4a29.js.map",
-    "static/js/2.5700cd27.chunk.js": "/zone-app/static/js/2.5700cd27.chunk.js",
-    "static/js/2.5700cd27.chunk.js.map": "/zone-app/static/js/2.5700cd27.chunk.js.map",
+    "static/js/2.254c5309.chunk.js": "/zone-app/static/js/2.254c5309.chunk.js",
+    "static/js/2.254c5309.chunk.js.map": "/zone-app/static/js/2.254c5309.chunk.js.map",
     "static/js/3.38349dbb.chunk.js": "/zone-app/static/js/3.38349dbb.chunk.js",
     "static/js/3.38349dbb.chunk.js.map": "/zone-app/static/js/3.38349dbb.chunk.js.map",
     "index.html": "/zone-app/index.html",
     "static/css/main.b5678107.chunk.css.map": "/zone-app/static/css/main.b5678107.chunk.css.map",
-    "static/js/2.5700cd27.chunk.js.LICENSE.txt": "/zone-app/static/js/2.5700cd27.chunk.js.LICENSE.txt",
+    "static/js/2.254c5309.chunk.js.LICENSE.txt": "/zone-app/static/js/2.254c5309.chunk.js.LICENSE.txt",
     "static/media/arabica-149.302f3def.png": "/zone-app/static/media/arabica-149.302f3def.png",
     "static/media/dish.51df67fe.png": "/zone-app/static/media/dish.51df67fe.png",
     "static/media/food.0e923c1d.jpg": "/zone-app/static/media/food.0e923c1d.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.062c4a29.js",
-    "static/js/2.5700cd27.chunk.js",
+    "static/js/2.254c5309.chunk.js",
     "static/css/main.b5678107.chunk.css",
-    "static/js/main.66c73a34.chunk.js"
+    "static/js/main.200691e8.chunk.js"
   ]
 }
