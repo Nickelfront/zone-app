@@ -16,9 +16,9 @@ class Suggestions extends Component<SuggestionsProps> {
         for (const [index, item] of this.props.meals.entries()) {
             recipeItems.push(<li key={index}><SuggestedRecipe prepTime={item.prepTime} rating={item.rating} name={item.name} type={item.type} img={item.img} isEven={index % 2 == 0}/></li>);
         }
-        return <section className="">
+        return <section>
             <h2 className="text-purple-dark text-xl"><strong>Suggested</strong> for you</h2>
-            <div>
+            <div className="mt-5">
                 <ul className="flex flex-row space-x-10">
                     {recipeItems}
                 </ul>

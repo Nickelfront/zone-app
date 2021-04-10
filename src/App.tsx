@@ -1,5 +1,5 @@
 import './App.scss';
-import React, { Component } from 'react';
+import { Component } from 'react';
 import Navigation from './Navigation/Navigation';
 import Dashboard from './components/Dashboard/Dashboard';
 import Meals from './components/Meals/Meals';
@@ -12,7 +12,6 @@ import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 import KitchenIcon from '@material-ui/icons/Kitchen';
 import HistoryIcon from '@material-ui/icons/History';
 import SettingsIcon from '@material-ui/icons/Settings';
-import { Router } from 'react-router-dom';
 
 class App extends Component {
   render() {

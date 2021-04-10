@@ -3,8 +3,8 @@ import { Component } from "react";
 class Error extends Component {
 
     render() {
-        return <div>
-                <h1>Something went wrong.</h1>
+        return <div className="flex">
+                <h1 className="justify-center">404 - Page Not Found</h1>
             </div>
     }
 }
