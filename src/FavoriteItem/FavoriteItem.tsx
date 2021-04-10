@@ -24,7 +24,7 @@ class FavoriteItem extends Component<FavoriteItemProps> {
             }
         }
 
-        return <div className="bg-white rounded-xl">
+        return <div className="bg-white rounded-xl w-64">
                 <span>{this.props.name}</span>
             {starsRating}
         </div>

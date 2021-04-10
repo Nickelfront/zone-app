@@ -1,2 +1,2 @@
 # zone-app
-Web application to track nutrition
+React web application to track nutrition
