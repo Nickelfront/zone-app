@@ -2,9 +2,9 @@ import { Component } from "react";
 import Banner from "../../Banner/Banner";
 import Search from "../../Search/Search";
 import DateDisplay from "../../DateDisplay/DateDisplay";
-import Suggestions from "../../Suggestions/Suggestions";
 import Favorites from "../../Favorites/Favorites";
-import bannerImg, { bannerText, favorites, meals } from "../../utils/mockData";
+import bannerImg, { bannerText, favorites, meals } from "../../../utils/mockData";
+import Suggestions from "../../Suggestions/Suggestions";
 
 class Dashboard extends Component {
 

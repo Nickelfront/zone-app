@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { MealType } from "../utils/types";
+import { MealType } from "../../utils/types";
 import StarIcon from '@material-ui/icons/Star';
 
 type SuggestedRecipeProps = {

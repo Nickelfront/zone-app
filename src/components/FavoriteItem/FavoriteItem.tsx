@@ -2,7 +2,7 @@ import { Component } from "react";
 import StarIcon from '@material-ui/icons/Star';
 import StarHalfIcon from '@material-ui/icons/StarHalf';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
-import { MealType } from "../utils/types";
+import { MealType } from "../../utils/types";
 
 type FavoriteItemProps = {
     name: string

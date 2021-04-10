@@ -4,7 +4,7 @@ class Error extends Component {
 
     render() {
         return <div className="flex">
-                <h1 className="justify-center">404 - Page Not Found</h1>
+                <h1 className="text-3xl align-center">404 - Page Not Found</h1>
             </div>
     }
 }

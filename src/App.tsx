@@ -1,13 +1,13 @@
 import './App.scss';
 import { Component } from 'react';
-import Navigation from './Navigation/Navigation';
-import Dashboard from './components/Dashboard/Dashboard';
-import Meals from './components/Meals/Meals';
-import History from './components/History/History';
-import Settings from './components/Settings/Settings';
+import Navigation from './components/Navigation/Navigation';
+import Dashboard from './components/pages/Dashboard/Dashboard';
+import Meals from './components/pages/Meals/Meals';
+import History from './components/pages/History/History';
+import Settings from './components/pages/Settings/Settings';
+import Error from './components/pages/Error/Error';
 import { Route, Switch } from 'react-router';
 import { WebRoute } from './utils/types'
-import Error from './components/Error/Error';
 import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 import KitchenIcon from '@material-ui/icons/Kitchen';
 import HistoryIcon from '@material-ui/icons/History';
@@ -28,7 +28,7 @@ class App extends Component {
       routes.push(<Route key={index} exact path={item.url} component={item.component} />);
     }
 
-    return <main className="m-10 flex space-x-10">
+    return <main className="max-h-screen min-h-screen p-10 flex space-x-10">
       <Navigation links={links} />
       <section className="hide-scrollbar overflow-auto max-h-screen">
         <Switch>
