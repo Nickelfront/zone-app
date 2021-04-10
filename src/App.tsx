@@ -12,7 +12,7 @@ import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 import KitchenIcon from '@material-ui/icons/Kitchen';
 import HistoryIcon from '@material-ui/icons/History';
 import SettingsIcon from '@material-ui/icons/Settings';
-import { BrowserRouter, Router } from 'react-router-dom';
+import { Router } from 'react-router-dom';
 
 class App extends Component {
   render() {
@@ -30,13 +30,11 @@ class App extends Component {
     }
 
     return <main className="m-10 flex space-x-10">
-      <Navigation links={links} />     
+      <Navigation links={links} />
       <section className="hide-scrollbar overflow-auto max-h-screen">
         <Switch>
-          <BrowserRouter basename="/zone-app">
           {routes}
           <Route component={Error} />
-          </BrowserRouter>
         </Switch>
       </section>               
     </main>
