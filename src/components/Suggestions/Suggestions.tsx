@@ -14,7 +14,7 @@ class Suggestions extends Component<SuggestionsProps> {
     render() {
         let recipeItems : any[] = [];
         for (const [index, item] of this.props.meals.entries()) {
-            recipeItems.push(<li key={index}><SuggestedRecipe prepTime={item.prepTime} rating={item.rating} name={item.name} type={item.type} img={item.img} isEven={index % 2 == 0}/></li>);
+            recipeItems.push(<li key={index}><SuggestedRecipe prepTime={item.prepTime} rating={item.rating} name={item.name} blocks={item.blocks} img={item.img} isEven={index % 2 == 0}/></li>);
         }
         
         const carouselSettings = {

@@ -8,7 +8,7 @@ export type WebRoute = {
 
 export type Recipe = {
     name: string
-    type: MealType
+    blocks: number
     img: any
     rating: number
     prepTime: number //minutes
