@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/zone-app/static/css/main.db745695.chunk.css",
-    "main.js": "/zone-app/static/js/main.bc026c5a.chunk.js",
-    "main.js.map": "/zone-app/static/js/main.bc026c5a.chunk.js.map",
-    "runtime-main.js": "/zone-app/static/js/runtime-main.3867aeef.js",
-    "runtime-main.js.map": "/zone-app/static/js/runtime-main.3867aeef.js.map",
-    "static/js/2.d58e74e7.chunk.js": "/zone-app/static/js/2.d58e74e7.chunk.js",
-    "static/js/2.d58e74e7.chunk.js.map": "/zone-app/static/js/2.d58e74e7.chunk.js.map",
-    "static/js/3.9a773619.chunk.js": "/zone-app/static/js/3.9a773619.chunk.js",
-    "static/js/3.9a773619.chunk.js.map": "/zone-app/static/js/3.9a773619.chunk.js.map",
+    "main.css": "/zone-app/static/css/main.3bfc4343.chunk.css",
+    "main.js": "/zone-app/static/js/main.ef645bf3.chunk.js",
+    "main.js.map": "/zone-app/static/js/main.ef645bf3.chunk.js.map",
+    "runtime-main.js": "/zone-app/static/js/runtime-main.cc1c7a54.js",
+    "runtime-main.js.map": "/zone-app/static/js/runtime-main.cc1c7a54.js.map",
+    "static/js/2.4be65d76.chunk.js": "/zone-app/static/js/2.4be65d76.chunk.js",
+    "static/js/2.4be65d76.chunk.js.map": "/zone-app/static/js/2.4be65d76.chunk.js.map",
+    "static/js/3.9891b1fe.chunk.js": "/zone-app/static/js/3.9891b1fe.chunk.js",
+    "static/js/3.9891b1fe.chunk.js.map": "/zone-app/static/js/3.9891b1fe.chunk.js.map",
     "index.html": "/zone-app/index.html",
-    "static/css/main.db745695.chunk.css.map": "/zone-app/static/css/main.db745695.chunk.css.map",
-    "static/js/2.d58e74e7.chunk.js.LICENSE.txt": "/zone-app/static/js/2.d58e74e7.chunk.js.LICENSE.txt",
+    "static/css/main.3bfc4343.chunk.css.map": "/zone-app/static/css/main.3bfc4343.chunk.css.map",
+    "static/js/2.4be65d76.chunk.js.LICENSE.txt": "/zone-app/static/js/2.4be65d76.chunk.js.LICENSE.txt",
     "static/media/arabica-149.302f3def.png": "/zone-app/static/media/arabica-149.302f3def.png",
     "static/media/dish.51df67fe.png": "/zone-app/static/media/dish.51df67fe.png",
     "static/media/food.0e923c1d.jpg": "/zone-app/static/media/food.0e923c1d.jpg",
     "static/media/meal.ba4105cd.jpg": "/zone-app/static/media/meal.ba4105cd.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.3867aeef.js",
-    "static/js/2.d58e74e7.chunk.js",
-    "static/css/main.db745695.chunk.css",
-    "static/js/main.bc026c5a.chunk.js"
+    "static/js/runtime-main.cc1c7a54.js",
+    "static/js/2.4be65d76.chunk.js",
+    "static/css/main.3bfc4343.chunk.css",
+    "static/js/main.ef645bf3.chunk.js"
   ]
 }
