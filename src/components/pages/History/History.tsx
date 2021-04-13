@@ -1,4 +1,4 @@
-import { Component, useState } from "react";
+import { Component } from "react";
 import { daysOfTheWeek, monthNames } from "../../../utils/constants";
 import { nutritionItems } from "../../../utils/mockData";
 import DayNutrition from "../../DayNutrition/DayNutrition";
@@ -25,7 +25,7 @@ class History extends Component<HistoryProps,HistoryState> {
 
             const dayString = `${daysOfTheWeek[d.getDay()]}, ${d.getDate()} ${monthNames[d.getMonth()]} ${d.getFullYear()}`;
     
-            dh.push(<li key={day}><DayNutrition day={dayString} nutritionItems={[]}/></li>)
+            dh.push(<li key={day}><DayNutrition day={dayString} nutritionItems={nutritionItems}/></li>)
             day++;
         }
 
@@ -35,7 +35,7 @@ class History extends Component<HistoryProps,HistoryState> {
     render() {
         
         return <div>
-            <ul>
+            <ul className="space-y-10">
                 {this.getTenDaysAgo()}
             </ul>
         </div>

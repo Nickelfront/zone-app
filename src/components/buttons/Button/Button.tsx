@@ -6,6 +6,7 @@ type ButtonProps = {
     icon?: any
     filled?: boolean
     bordered?: boolean
+    size?: 'sm' | 'lg' 
 }
 class Button extends Component<ButtonProps> {
     constructor(props: ButtonProps) { 
@@ -15,11 +16,18 @@ class Button extends Component<ButtonProps> {
     render() {
         let classNames = ''
         if (this.props.filled) {
-            classNames += ' bg-primary text-white '
+            classNames += 'bg-primary text-white '
         } else if (this.props.bordered) {
-            classNames += ' bg-white border-primary text-primary '
+            classNames += 'bg-white border border-primary text-primary '
         }
-        return <button className={classNames + " py-5 text-lg justify-self-stretch rounded-full " + this.props.classStyles}>
+        if (this.props.size == 'sm') {
+            classNames += ' py-1 ';
+        } else if (this.props.size == 'lg') {
+            classNames += ' py-10 ';
+        } else {
+            classNames += ' py-5 '
+        }
+        return <button className={classNames + " text-lg justify-self-stretch rounded-full " + this.props.classStyles}>
             {this.props.label}
         </button>
     }
