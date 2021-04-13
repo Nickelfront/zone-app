@@ -24,7 +24,7 @@ class Suggestions extends Component<SuggestionsProps> {
             itemSideOffsets: 5,
         }
         return <section>
-            <h2 className="text-purple-dark text-xl"><strong>Suggested</strong> for you</h2>
+            <h2 className="text-dark text-xl"><strong>Suggested</strong> for you</h2>
             <div className="mt-5">
             {/* <Carousel {...carouselSettings} _data={recipeItems}>
                 { */}

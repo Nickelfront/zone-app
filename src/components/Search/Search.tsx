@@ -5,7 +5,7 @@ const Search = (props: any) => {
   
     return <div>
         <TextField
-            className="bg-gray-300 rounded-full" 
+            className="bg-gray-200 rounded-full" 
             placeholder="Search for your favorite food"
             InputProps={{
                 style: {

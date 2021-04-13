@@ -7,12 +7,11 @@ module.exports = {
     colors: {
       white: colors.white,
       gray: colors.coolGray,
-      purple: {
-        light: '#e2e4f6',
-        DEFAULT: '#8B5CF6', 
-        dark: '#261D56'
-      },
-      red: colors.red,
+      primary: '#B0746D',
+      light: '#D4B3AF',
+      dark: '#96222A',
+      background: '#FBEEEF',
+      complementary: '#FFD9D7',
       yellow: colors.yellow
     },
     container: {

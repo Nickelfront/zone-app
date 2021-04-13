@@ -22,7 +22,7 @@ class Favorites extends Component<FavoritesProps> {
         }
       
         return <section>
-            <h2 className="text-purple-dark text-xl">Your <strong>Favorites</strong></h2>
+            <h2 className="text-dark text-xl">Your <strong>Favorites</strong></h2>
             <div className="mt-5">
                 {/* <Carousel {...carouselSettings} _data={favorites}>
                     { */}

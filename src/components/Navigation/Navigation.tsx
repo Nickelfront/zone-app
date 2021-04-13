@@ -19,10 +19,10 @@ const Navigation = (props: NavigationProps) => {
         items.push(<li key={index}><NavLink url={item.url} icon={item.icon} altLabel={item.altLabel}/></li>);
     }
 
-    return <nav className="min-w-max max-w-max bg-purple-dark rounded-3xl p-10 ">
+    return <nav className="min-w-max max-w-max bg-primary rounded-3xl p-10 ">
         <div className="flex flex-col space-y-40 items-center">
-            <div className="p-5 bg-purple-light rounded-full">
-                <RestaurantIcon fontSize="large" className="text-purple-dark"/>
+            <div className="p-5 bg-light rounded-full">
+                <RestaurantIcon fontSize="large" className="text-white"/>
             </div>
             <div>
                 <ul className="space-y-10">
@@ -30,8 +30,8 @@ const Navigation = (props: NavigationProps) => {
                 </ul>
             </div>
             <div className="flex flex-col space-y-10">
-                <a target="_blank" href="https://github.com/Nickelfront/zone-app"><HelpOutlineIcon className="text-purple-light"/></a>
-                <a href=""><ExitToAppIcon className="text-purple-light"/></a>
+                <a target="_blank" href="https://github.com/Nickelfront/zone-app"><HelpOutlineIcon className="text-light"/></a>
+                <a href=""><ExitToAppIcon className="text-light"/></a>
             </div>
         </div>
     </nav>
