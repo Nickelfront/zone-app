@@ -6,12 +6,13 @@ import Meals from './components/pages/Meals/Meals';
 import History from './components/pages/History/History';
 import Settings from './components/pages/Settings/Settings';
 import Error from './components/pages/Error/Error';
-import { Route, Switch } from 'react-router';
+import { Redirect, Route, Switch } from 'react-router';
 import { WebRoute } from './utils/types'
 import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 import KitchenIcon from '@material-ui/icons/Kitchen';
 import HistoryIcon from '@material-ui/icons/History';
 import SettingsIcon from '@material-ui/icons/Settings';
+import RecipeDetails from './components/pages/RecipeDetails/RecipeDetails';
 
 class App extends Component {
   render() {
@@ -33,9 +34,11 @@ class App extends Component {
       <section className="hide-scrollbar overflow-auto max-h-screen">
         <Switch>
           {routes}
+          <Route exact path="/recipe/:id" component={RecipeDetails} />
+          <Redirect from='*' to='/' /> 
           <Route component={Error} />
         </Switch>
-      </section>               
+      </section>
     </main>
   }
 }

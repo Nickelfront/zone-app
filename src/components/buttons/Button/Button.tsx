@@ -1,7 +1,10 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 
 type ButtonProps = {
     classStyles?: string
+    linkTo?: string
+    component?: any
     label: string
     icon?: any
     filled?: boolean
@@ -27,9 +30,15 @@ class Button extends Component<ButtonProps> {
         } else {
             classNames += ' py-5 '
         }
-        return <button className={classNames + " text-lg justify-self-stretch rounded-full " + this.props.classStyles}>
-            {this.props.label}
-        </button>
+        if (!this.props.linkTo) {
+            return <button className={classNames + " text-lg justify-self-stretch rounded-full " + this.props.classStyles}>
+                {this.props.label}
+            </button>
+        } else {
+            return <Link to={{pathname: this.props.linkTo}} component={this.props.component} className={classNames + " text-center text-lg rounded-full " + this.props.classStyles}>
+                    {this.props.label}
+                </Link>
+        }
     }
 }
 

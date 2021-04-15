@@ -3,7 +3,7 @@ import { Recipe } from "../../utils/types";
 import SuggestedRecipe from "../SuggestedRecipe/SuggestedRecipe";
 
 type SuggestionsProps = {
-    meals: Recipe[]
+    recipes: Recipe[]
 }
 class Suggestions extends Component<SuggestionsProps> {
     
@@ -13,8 +13,8 @@ class Suggestions extends Component<SuggestionsProps> {
     
     render() {
         let recipeItems : any[] = [];
-        for (const [index, item] of this.props.meals.entries()) {
-            recipeItems.push(<li key={index}><SuggestedRecipe prepTime={item.prepTime} rating={item.rating} name={item.name} blocks={item.blocks} img={item.img} isEven={index % 2 == 0}/></li>);
+        for (const [index, item] of this.props.recipes.entries()) {
+            recipeItems.push(<li key={index}><SuggestedRecipe recipe={item} isEven={index % 2 == 0}/></li>);
         }
         
         const carouselSettings = {

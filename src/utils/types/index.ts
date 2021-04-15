@@ -1,3 +1,4 @@
+import { Meal } from "../classes/Meal"
 
 export type WebRoute = {
     url: string
@@ -7,11 +8,16 @@ export type WebRoute = {
 }
 
 export type Recipe = {
+    id: number
+    slug: string
     name: string
     blocks: number
-    img: any
+    img?: any
     rating: number
+    ingredients: Meal[]
     prepTime: number //minutes
+    description: string
+    author?: string    
 }
 
 export enum MealType {

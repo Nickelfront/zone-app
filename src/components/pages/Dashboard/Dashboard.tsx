@@ -3,7 +3,7 @@ import Banner from "../../Banner/Banner";
 import Search from "../../Search/Search";
 import DateDisplay from "../../DateDisplay/DateDisplay";
 import Favorites from "../../Favorites/Favorites";
-import bannerImg, { bannerText, favorites, meals } from "../../../utils/mockData";
+import bannerImg, { bannerText, favorites, recipes } from "../../../utils/mockData";
 import Suggestions from "../../Suggestions/Suggestions";
 
 class Dashboard extends Component {
@@ -16,7 +16,7 @@ class Dashboard extends Component {
                 <DateDisplay/>
             </div>
             <Banner text={bannerText} imgSrc={bannerImg}/>
-            <Suggestions meals={meals}/>
+            <Suggestions recipes={recipes}/>
             <Favorites favorites={favorites}/>
         </section>
     }
