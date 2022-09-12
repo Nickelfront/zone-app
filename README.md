@@ -2,4 +2,4 @@
 React web application to track nutrition.
 Developed for learning purposes only.
 
-**Demo**: https://nickelfront.github.io/zone-app/
+**Demo**: https://nic-pan.github.io/zone-app/
